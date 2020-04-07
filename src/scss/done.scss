@@ -1,0 +1,63 @@
+
+
+// 狀態說明
+
+.donestatus {
+    position: relative;
+    top: -5px;
+}
+
+.doneico {
+    position: relative;
+    width: 48%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    top: 35px;
+    margin-bottom: 126px;
+}
+
+.donetxt {
+    position: relative;
+    top: -50px;
+    left: 2px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: -22px;
+}
+
+
+// 內容細節
+
+.donedetail {
+    position: relative;
+}
+
+.txtleft {
+    position: absolute;
+    text-align: left;
+    left: 18px;
+    top: 14px;
+    line-height: 28px;
+    letter-spacing: 4px;
+    &.tiny {
+        position: relative;
+        text-align: left;
+        top: 4px;
+        line-height: 20px;
+        padding-bottom: 16px;
+    }
+}
+
+.txtright {
+    position: relative;
+    text-align: right;
+    color: rgba(114, 240, 201, 0.9);
+    right: 12px;
+    top: 14px;
+    line-height: 28px;
+    letter-spacing: 4px;
+    padding-bottom: 22px;
+}
+
+

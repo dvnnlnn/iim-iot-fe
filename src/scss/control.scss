@@ -1,0 +1,124 @@
+
+
+// 上部區塊
+
+.upper {
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    height: auto;
+    top: 85px;
+    padding-top: 6px;
+    padding-bottom: 120px;
+    margin: 0px auto;
+}
+
+.voicedark {
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    height: auto;
+    top: 85px;
+    padding-top: 6px;
+    padding-bottom: 120px;
+    margin: 0px auto;
+    background: black;
+}
+
+
+// 底部區塊
+
+.bottom {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 130px;
+    bottom: 0px;
+    background: -webkit-linear-gradient(transparent,black,black,black);
+    background: -o-linear-gradient(transparent,black,black,black);
+    background: -moz-linear-gradient(transparent,black,black,black);
+    background: linear-gradient(transparent,black,black,black);
+    &.tiny {
+        height: 95px;
+    }
+}
+
+
+// 語音按鈕
+
+.voiceico {
+    position: relative;
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    top: 17px;
+}
+
+.voicebtn {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    top: 28px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(114, 240, 201, 0.9);
+    box-shadow: 0px 7px 0px 0px rgba(114, 240, 201, 0.3);
+    &:active {
+        top: 31px;
+        background-color: rgba(114, 240, 201, 0.5);
+        box-shadow: 0px 4px 0px 0px rgba(114, 240, 201, 0.2);
+    }
+    &.pressed {
+        top: 31px;
+        background-color: rgba(114, 240, 201, 0.5);
+        box-shadow: 0px 4px 0px 0px rgba(114, 240, 201, 0.2);
+    }
+}
+
+.nextico {
+    position: relative;
+    height: 15px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+}
+
+
+// 語音控制
+
+.sirispeaks {
+    position: relative;
+    height: 30%;
+    width: 100%;
+    .siri {
+        text-align: center;
+        padding: 38px 0px 0px 18px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 36px;
+        &.tiny {
+            color: rgba(114, 240, 201, 0.9);
+            padding: 15px 0px 0px 20px;
+            letter-spacing: 8px;
+            font-weight: 100;
+            font-size: 21px;
+        }
+    }
+}
+
+.userspeaks {
+    position: relative;
+    height: 30%;
+    width: 100%;
+    p {
+        text-align: center;
+        padding: 36% 0px 0px 0px;
+        letter-spacing: 8px;
+        font-weight: 100;
+        font-size: 21px;
+    }
+}
+

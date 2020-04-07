@@ -1,0 +1,356 @@
+
+
+/*--------------------重設--------------------*/ 
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/*--------------------全局--------------------*/ 
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+hr {
+    width: 90%;
+    opacity: 0.8;
+}
+
+p, div, label {
+    font-family: sans-serif, serif, Microsoft JhengHei;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+
+
+/*--------------------圖示--------------------*/ 
+
+.logo {
+    position: relative;
+    width: 83%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    top: 50px;
+    margin-bottom: 126px;
+}
+
+
+
+
+/*-------------------頂部欄-------------------*/ 
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    z-index: 10;
+    background: black;
+}
+
+.nomenu {
+    position: absolute;
+    z-index: 11;
+    width: 19px;
+    height: 12px;
+    margin: 37px 18px;
+    opacity: 0.5;
+}
+
+.bartext {
+    position: absolute;
+    width: 100%;
+    line-height: 85px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+
+
+/*-------------------內容欄-------------------*/ 
+
+.content {
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    top: 85px;
+    margin: 0px auto;
+    padding-bottom: 10px; 
+    background: black;
+}
+
+
+
+
+/*--------------------按鈕--------------------*/ 
+
+.btn {
+    position: relative;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+    margin:0 auto;
+    display: block;
+    width: 42%;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 17px;
+    text-decoration: none;
+    padding-left: 4px;
+    &:hover {
+        color: rgba(114, 240, 201, 0.9);
+        cursor: pointer;
+    }
+    &:active {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 500;
+        box-shadow: 0px 0px 0px 2px rgba(114, 240, 201, 1);
+        background-color: rgba(114, 240, 201, 1);
+    }
+    &.v2:hover {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 500;
+        box-shadow: 0px 0px 0px 2px rgba(114, 240, 201, 1);
+        background-color: rgba(114, 240, 201, 1);
+    }
+    &.v2:active{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 500;
+        box-shadow: 0px 0px 0px 2px rgba(114, 240, 201, 0.5);
+        background-color: rgba(114, 240, 201, 0.5);
+    }
+    &.hid {
+        box-shadow: 0px 0px 0px 0px;
+        margin-top: -16px;
+    }
+    &.hid:active {
+        color: rgba(114, 240, 201, 0.5);
+        font-weight: 100;
+        box-shadow: 0px 0px 0px 0px;
+        background-color: transparent;
+    }
+}
+
+
+
+
+/*-------------------輸入框-------------------*/ 
+
+.field {
+    &.half {
+        float: left;
+        width: 47%;
+        margin: 0% 1.5%;
+        label {
+            margin-left: 4px;
+        }
+        margin-bottom: 16px;
+    }
+    &.quarter {
+        float: left;
+        margin: 0% 0%;
+        width: 22%;
+    }
+}
+
+.options {
+    color: rgba(114, 240, 201, 0);
+    cursor: pointer;
+    &:focus {
+        color: rgba(114, 240, 201, 0);
+        cursor: pointer;
+    }
+}
+
+.file {
+    color: rgba(114, 240, 201, 0.9);
+}
+
+.hidden {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    display: block;
+    margin-left: 8px;
+    line-height: 8px;
+}
+
+input {
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    background-color: transparent;
+    height: 38px;
+    border-width: 0px;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 17px;
+    margin-bottom: 10px;
+    outline: none;
+    &.code {
+        top: -8px;
+        left: 44%;
+        width: 50px;
+        height: 50px;
+        padding: 0px 0px 0px 4px;
+        text-align: center;
+    }
+    &:focus {
+        color: rgba(114, 240, 201, 0.9);
+    }
+}
+
+
+
+
+/*------------------彈出窗口------------------*/ 
+
+.window {
+    position: absolute;
+    width: 56%;
+    left: 22%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    background-color: black;
+    z-index: 12;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+}
+
+.option {
+    position: relative;
+    // background: blue;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: -15px;
+    text-decoration: none;
+    padding-left: 4px;
+    &:hover {
+        color: rgba(114, 240, 201, 0.9);
+        cursor: pointer;
+    }
+    &:active {
+        color: rgba(114, 240, 201, 0.5);
+    }
+}
+
+
+
+
+/*--------------------卡片--------------------*/ 
+
+.card {
+    position: relative;
+    width: 95%;
+    height: 90px;
+    margin: 0px auto;
+    top: 6px;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+    &:active {
+        opacity: 0.5;
+        // 其他部分在 main.js
+    }
+    .cardleft {
+        position: absolute;
+        text-align: left;
+        left: 18px;
+        top: 14px;
+        line-height: 32px;
+        letter-spacing: 4px;
+    }
+    .cardright {
+        position: absolute;
+        text-align: right;
+        right: 12px;
+        top: 14px;
+        line-height: 32px;
+        letter-spacing: 4px;
+    }
+    &.noline {
+        width: 100%;
+        height: 70px;
+        box-shadow: 0px 0px 0px 0px;
+        &.inuse p {
+            color: rgba(114, 240, 201, 0.9);
+        }
+    }
+}
+
+.nolinecard {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 0px auto;
+    top: -8px;
+    box-shadow: 0px 0px 0px 0px;
+    margin-bottom: -8px;
+    &.inuse p {
+            color: rgba(114, 240, 201, 0.9);
+    }
+    .cardleft {
+        position: absolute;
+        text-align: left;
+        left: 18px;
+        top: 14px;
+        line-height: 32px;
+        letter-spacing: 4px;
+    }
+    .cardright {
+        position: absolute;
+        text-align: right;
+        right: 12px;
+        top: 14px;
+        line-height: 32px;
+        letter-spacing: 4px;
+    }
+}
